@@ -1,0 +1,61 @@
+<div class="row">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <!-- <button type="button" class="btn btn-primary">
+        Notifications <span class="badge badge-light">4</span>
+      </button> -->
+    <a class="navbar-brand" href="#">
+      <span class="font-bold"> MY </span> APP
+      <span class="badge badge-light">{{version}}</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['tab1']"> Tab1
+          </a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['tab2']">Tab2</a>
+        </li>
+        <li class="nav-item dropdown" dropdown [routerLinkActive]="['singleactive']">
+          <a class="nav-link dropdown-toggle" id="dropdown01" dropdownToggle data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Parent </a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01" *dropdownMenu>
+            <a class="dropdown-item" [routerLink]="['child1']" [routerLinkActive]="['active']">Child</a>
+            <a class="dropdown-item">Child2</a>
+            <!-- <a class="dropdown-item">Something else here</a> -->
+          </div>
+        </li>
+        <li class="nav-item dropdown" dropdown [routerLinkActive]="['singleactive']">
+          <a class="nav-link dropdown-toggle" id="dropdown01" dropdownToggle data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Parent2 </a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01" *dropdownMenu>
+            <a class="dropdown-item" [routerLink]="['childb1']" [routerLinkActive]="['active']">ChildB1</a>
+            <a class="dropdown-item">ChildB2</a>
+            <!-- <a class="dropdown-item">Something else here</a> -->
+          </div>
+        </li>
+
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['settings']">Settings</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['log']">Log</a>
+        </li>
+
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['about']">About</a>
+        </li>
+
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</div>
