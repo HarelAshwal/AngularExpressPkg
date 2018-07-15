@@ -1,4 +1,4 @@
-# Angular + Express + Pkg
+# Angular + Express + Pkg + Bootstrap + WebSockets
 
 1. clone the repo
 2. npm i
