@@ -1,5 +1,5 @@
 
-import { ModServices } from "./ModServices";
+import { AppServices } from "./AppServices";
 
 const argv = process.execArgv.join();
 const isDebug = argv.includes('inspect') || argv.includes('debug');
@@ -11,7 +11,7 @@ if (isDebug) {
     defaultListeningAddress = "127.0.0.1";
 }
 
-var modServices = new ModServices(defaultListeningAddress);
+var modServices = new AppServices(defaultListeningAddress);
 
 
 
